@@ -108,6 +108,6 @@ app.put("/image", (req, res) => {
 //   // res = false
 // });
 
-app.listen(3001, () => {
-  console.log("App is running");
+app.listen(process.env.PORT || 3001, () => {
+  console.log(`App is running ${process.env.PORT}`);
 });
